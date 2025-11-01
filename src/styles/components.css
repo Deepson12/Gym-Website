@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import './global.css';
+
+
+@layer components{
+    .title-text{
+        @apply font-formula text-9xl text-white tracking-wide uppercase font-bold scale-y-[1.1] whitespace-nowrap 
+    }
+
+    .animated-text{
+        @apply block leading-8 text-2xl font-bold uppercase tracking-wide font-formula text-text
+    }
+
+    .horizontal-center{
+        @apply absolute left-1/2 -translate-x-1/2
+    }
+
+    .secondary-text{
+        @apply block leading-tight font-bold uppercase tracking-wider font-formula  text-center
+    }
+}
