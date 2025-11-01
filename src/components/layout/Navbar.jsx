@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <nav className='fixed w-screen px-lg py-xl flex justify-between items-center z-20'>
         <AnimatedText content='Work'/>
-        <AnimatedText content='Services'/>
+        <AnimatedText content='Services' visible='hidden md:block'/>
         <h1 className='secondary-text text-text text-3xl'>Fitness Corner</h1>
-        <AnimatedText content='About'/>
+        <AnimatedText content='About' visible='hidden md:block'/>
         <AnimatedText content='Contact'/>
     </nav>
   )

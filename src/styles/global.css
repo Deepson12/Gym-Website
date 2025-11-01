@@ -1,11 +1,14 @@
 @import "tailwindcss";
 
 
+
+
 body{
     list-style: none;
     text-decoration: none;
     min-height: 100vh;
     overflow-x: hidden;
+    
 }
 
 

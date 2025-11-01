@@ -4,7 +4,7 @@ import '../../styles/components.css'
 
 import gsap from 'gsap'
 
-const AnimatedText = ({content}) => {
+const AnimatedText = ({content, visible}) => {
   const textRef = useRef(null)
   const firstText = useRef(null)
 
@@ -43,11 +43,14 @@ const AnimatedText = ({content}) => {
   }
 
   return (
-    <div className='inline-block overflow-hidden h-8 cursor-pointer' onMouseEnter={handleHoverEnter} onMouseLeave={handleMouseLeave}>
+    <div className={`${visible}`}>
+      
+    <div className={`inline-block overflow-hidden h-8 cursor-pointer`} onMouseEnter={handleHoverEnter} onMouseLeave={handleMouseLeave}>
         <div className='inline-flex flex-col' ref={textRef}>
             <span className='animated-text' ref={firstText}>{content}</span>
             <span className='animated-text' >{content}</span>
         </div>
+    </div>
     </div>
   )
 }
