@@ -11,7 +11,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 
-const HeroSection = () => {
+const HeroSection = ({handleImageLoad}) => {
   const [scrolled, setScrolled] = useState(false)
 
 
@@ -99,7 +99,7 @@ useEffect(() => {
 
   return (
     <div ref={boxRef} className='relative font-formula h-screen overflow-hidden'>
-       <img src={bgImg} alt="" className='absolute w-full h-full object-cover object-[0%] md:object-center '/>
+       <img src={bgImg} alt="" className='absolute w-full h-full object-cover object-[0%] md:object-center ' onLoad={handleImageLoad}/>
        <div className='h-full horizontal-center grid py-20 items-end w-9/10 '>
         <div>
         <h1 ref={titleRef} className='title-text text-center h-fit w-fit mx-auto'>

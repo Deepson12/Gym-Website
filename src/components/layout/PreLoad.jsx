@@ -5,13 +5,13 @@ import '../../styles/components.css'
 import gsap from 'gsap'
 
 
-const PreLoad = ({onComplete}) => {
+const PreLoad = ({onComplete, imagesLoaded}) => {
 
   
 
 
   useEffect(()=>{
-    
+    if(!imagesLoaded) return ;
     
     const ctx = gsap.context(()=>{
       let tl = gsap.timeline({
@@ -40,7 +40,7 @@ const PreLoad = ({onComplete}) => {
     })
 
     return ()=> ctx.revert()
-  },[onComplete])
+  },[onComplete, imagesLoaded])
 
 
   return (

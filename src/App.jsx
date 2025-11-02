@@ -12,14 +12,26 @@ function App() {
   useLenis()
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(true)
-  const [allImagesLoaded, setAllImagesLoaded] = useState(false)
+  const totalImages = 1;
+  const [loadedImages, setLoadedImages] = useState(0)
+
+
+  const allImagesLoaded = totalImages === loadedImages
+
+  const handleImageLoad = ()=>{
+    setLoadedImages((prev)=> prev+1);
+   
+    
+  }
+  
+  
   return (
     <>
     <Navbar/>
-      {isLoading && <PreLoad onComplete={()=> setIsLoading(false)}/>}
+      {isLoading && <PreLoad onComplete={()=> setIsLoading(false)} imagesLoaded={allImagesLoaded}/>}
     <Routes location={location}>
       
-      <Route path='/' element={<Landing/>} />
+      <Route path='/' element={<Landing handleImageLoad={handleImageLoad}/>} />
       <Route path='/about' element={<About/>} />
      
     </Routes>

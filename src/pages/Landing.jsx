@@ -4,14 +4,14 @@ import { HeroServices } from '../components/sections/HeroServices'
 import Navbar from '../components/layout/Navbar'
 import PreLoad from '../components/layout/PreLoad'
 
-const Landing = () => {
+const Landing = ({handleImageLoad}) => {
   
 
   return (
     <div>
       
       
-        <HeroSection/>
+        <HeroSection handleImageLoad={handleImageLoad}/>
         <HeroServices/>
     </div>
   )
