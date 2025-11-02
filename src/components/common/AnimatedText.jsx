@@ -4,7 +4,7 @@ import '../../styles/components.css'
 
 import gsap from 'gsap'
 
-const AnimatedText = ({content, visible}) => {
+const AnimatedText = ({content, visible = 'block'}) => {
   const textRef = useRef(null)
   const firstText = useRef(null)
 

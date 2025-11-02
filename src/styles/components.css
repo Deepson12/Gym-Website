@@ -18,4 +18,12 @@
     .secondary-text{
         @apply block leading-tight font-bold uppercase tracking-wider font-formula  text-center
     }
+
+    .grid-col{
+        @apply w-full h-full 
+    }
+
+    .absolute-center{
+        @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2
+    }
 }

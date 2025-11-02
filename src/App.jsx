@@ -1,4 +1,6 @@
+import React, { useState } from 'react'
 import Navbar from './components/layout/Navbar'
+import PreLoad from './components/layout/PreLoad'
 import { useLenis } from './hooks/useLenis'
 import About from './pages/About'
 import Landing from './pages/Landing'
@@ -9,10 +11,12 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 function App() {
   useLenis()
   const location = useLocation();
-
+  const [isLoading, setIsLoading] = useState(true)
+  const [allImagesLoaded, setAllImagesLoaded] = useState(false)
   return (
     <>
     <Navbar/>
+      {isLoading && <PreLoad onComplete={()=> setIsLoading(false)}/>}
     <Routes location={location}>
       
       <Route path='/' element={<Landing/>} />

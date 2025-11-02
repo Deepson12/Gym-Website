@@ -11,6 +11,11 @@ body{
     
 }
 
+::selection{
+    background: rgba(254, 254, 0, 1);
+    color: black;
+}
+
 
 /* ======================FONTS============================ */
 
@@ -54,7 +59,7 @@ body{
 
     /* Colors */
     --color-primary: #001415;
-    /* --color-secondary: #f1ffc6; */
+    --color-secondary: #1E5052;
     --color-accent: #fefe00;
     /* --color-background: #0b0a0b; */
     --color-text: #c1cbc9 ;
