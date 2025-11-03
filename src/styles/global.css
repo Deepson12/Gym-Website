@@ -31,6 +31,20 @@ body{
     font-style: normal;
 }
 
+/* MONTSERRAT */
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/static/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/static/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
 
 /* FORMULA */
 
@@ -63,12 +77,13 @@ body{
     --color-accent: #fefe00;
     /* --color-background: #0b0a0b; */
     --color-text: #c1cbc9 ;
-    /* --color-surface: #161913; */
+    --color-surface: #616e6f;
     
 
     /* Fonts and Typography */
     --font-formula: "Formula", sans-serif;
     --font-anton: "Anton", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
 
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
