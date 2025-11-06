@@ -4,6 +4,7 @@ import { HeroServices } from '../components/sections/HeroServices'
 import Navbar from '../components/layout/Navbar'
 import PreLoad from '../components/layout/PreLoad'
 import Showcase from '../components/sections/Showcase'
+import Testimonial from '../components/sections/Testimonial'
 
 const Landing = ({handleImageLoad}) => {
   
@@ -14,7 +15,9 @@ const Landing = ({handleImageLoad}) => {
       
         <HeroSection handleImageLoad={handleImageLoad}/>
         <HeroServices handleImageLoad={handleImageLoad}/>
-        <Showcase/>
+        <Showcase handleImageLoad={handleImageLoad}/>
+        <Testimonial/>
+        
     </div>
   )
 }

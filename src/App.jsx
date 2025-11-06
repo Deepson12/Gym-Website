@@ -12,7 +12,7 @@ function App() {
   useLenis()
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(true)
-  const totalImages = 2;
+  const totalImages = 5;
   const [loadedImages, setLoadedImages] = useState(0)
 
 

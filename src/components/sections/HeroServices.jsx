@@ -29,7 +29,7 @@ useEffect(() => {
     });
 
     tl.to(imgRef.current, { y: -75 })
-      .to(imgBoxRef.current, { y: 75 }, '<');
+      .to(imgBoxRef.current, { y: 75 }, '<')
   });
 
   return () => ctx.revert();
