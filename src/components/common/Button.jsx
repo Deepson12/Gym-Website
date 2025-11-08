@@ -11,7 +11,7 @@ const imgSrc = [
     asterisk, circle, square, dumbell
 ]
 
-const Button = ({children}) => {
+const Button = ({children, className}) => {
     const [index, setIndex] = useState(0);
     const [intervalId, setIntervalId] = useState(null);
     const textRef = useRef(null)
@@ -66,7 +66,7 @@ const Button = ({children}) => {
 
 
   return (
-    <button className='border border-white w-fit mx-auto lg:mx-0  flex items-center' onMouseEnter={startLoop} onMouseLeave={endLoop}>
+    <button className={`border border-white w-fit ${className}  lg:mx-0  flex items-center`} onMouseEnter={startLoop} onMouseLeave={endLoop}>
         <div className=' px-3'>
             <img src={imgSrc[index]} alt="" className='w-6 h-6 object-contain'/>
         </div>

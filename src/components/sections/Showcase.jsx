@@ -75,7 +75,7 @@ const Showcase = ({handleImageLoad}) => {
     <section ref={sectionRef} className='h-screen relative bg-primary flex  justify-center pt-40'>
       <div className='relative'>
 
-      <div className='w-100 h-100 absolute-center overflow-hidden z-10'>
+      <div className=' w-70 h-70 md:w-80 md:h-80 absolute-center overflow-hidden z-10'>
         {imgArr.map((value, index) => (
           <img 
           ref={(el) => (imgRef.current[index] = el)} 
@@ -94,7 +94,7 @@ const Showcase = ({handleImageLoad}) => {
             <span
              ref={(el)=> (textRef.current[index]= el)} 
              key={index}
-             className='tertiary-text text-9xl leading-34 scale-y-[1.1] block text-white' >{value}</span>
+             className='tertiary-text text-6xl md:text-9xl leading-34 scale-y-[1.1] block text-white' >{value}</span>
           ))
 
           }
@@ -104,15 +104,15 @@ const Showcase = ({handleImageLoad}) => {
       </div>
 
 
-      <div className='bottom-xl horizontal-center'>
-          <Button>See all</Button>
-      </div>
         </div>
+      <div className='bottom-xl absolute flex justify-center'>
+          <Button>View More</Button>
+      </div>
 
         
           
-            <h1 className=' absolute tertiary-text w-fit left-xl bottom-xl px-2 py-1 text-3xl text-text'>Selected Products</h1>
-            <h1 className=' absolute tertiary-text w-fit right-xl bottom-xl px-2 py-1 text-3xl text-text'>#Better4U</h1>
+            <h1 className=' absolute tertiary-text w-fit left-xl bottom-xl px-2 py-1 text-3xl text-text hidden md:block'>Selected Products</h1>
+            <h1 className=' absolute tertiary-text w-fit right-xl bottom-xl px-2 py-1 text-3xl text-text hidden md:block'>#Better4U</h1>
           
         
     </section>

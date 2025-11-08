@@ -8,12 +8,14 @@ body{
     text-decoration: none;
     min-height: 100vh;
     overflow-x: hidden;
+    background: #001415;
     
 }
 
 ::selection{
     background: rgba(254, 254, 0, 1);
     color: black;
+
 }
 
 

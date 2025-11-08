@@ -36,7 +36,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div ref={boxRef} className='lg:h-screen bg-primary py-20 md:pt-40'>
+    <div ref={boxRef} className=' bg-primary py-20 md:pt-40'>
       <div className='px-5 md:px-20'>
 
        <div className='flex flex-col w-full items-center gap-2 md:gap-4'>
@@ -72,7 +72,7 @@ useEffect(() => {
            <div className='flex flex-col justify-center lg:w-80 lg:h-120 gap-5'>
 
           <p className='text-text font-montserrat font-medium text-center lg:text-left'>Our talented team is capable of tackling challenges of all kinds</p>
-          <Button>Our Services</Button>
+          <Button className={'mx-auto'}>Our Services</Button>
           </div>
         </div>
       </div>
