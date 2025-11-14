@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AboutHero from '../components/sections/AboutHero'
+import Footer from '../components/sections/Footer'
 
-const About = () => {
+const About = ({handleImageLoad}) => {
   return (
     <div>
-        <Link to='/'>Home</Link>
+        <AboutHero handleImageLoad={handleImageLoad}/>
+        
     </div>
   )
 }

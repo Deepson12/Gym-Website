@@ -22,7 +22,7 @@ const Landing = ({handleImageLoad}) => {
         <CustomMarquee/>
         <Testimonial/>
         <ShortContact/>
-        <Footer/>
+        
     </div>
   )
 }

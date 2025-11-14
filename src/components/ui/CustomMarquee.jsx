@@ -22,7 +22,7 @@ const CustomMarquee = () => {
 
 
   return (
-    <section className='bg-primary py-40'>
+    <section className='bg-primary py-20 md:py-40'>
         <div className=''>
           <div className='flex '>
           <Marquee direction={'right'} speed={50}>
@@ -30,7 +30,7 @@ const CustomMarquee = () => {
             <div className='flex gap-10'>
                {
                  imgSrc.map((value, index)=>(
-                   <img key={index} src={value} alt="" className='h-40 w-56 pr-20'/>
+                   <img key={index} src={value} alt="" className='w-40 h-30 md:h-40 md:w-56 pr-20'/>
                   ))
                 }
             </div>

@@ -63,7 +63,7 @@ const PreLoad = ({onComplete, imagesLoaded}) => {
       </div>
       
       <div className='loader-title title-text absolute-center'>
-        <h1>FITNESS CORNER</h1>
+        <h1 className='text-4xl md:text-9xl'>FITNESS CORNER</h1>
       </div>
       
     </div>   
