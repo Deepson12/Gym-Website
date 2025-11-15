@@ -15,7 +15,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true)
   const totalImages = {
     "/": 5,
-    "/about": 1
+    "/about": 3
   };
   const [loadedImages, setLoadedImages] = useState(0)
 
@@ -29,7 +29,6 @@ function App() {
   }
 
   useEffect(()=>{
-    console.log(location.pathname);
     setLoadedImages(0);
     
   }, [location.pathname])
